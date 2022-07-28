@@ -4,7 +4,6 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-
 dotenv_path = Path('./infra/.env')
 load_dotenv(dotenv_path=dotenv_path)
 
@@ -47,26 +46,25 @@ ROOT_URLCONF = 'api_yamdb.urls'
 
 TEMPLATES_DIR = os.path.join(BASE_DIR, "templates")
 TEMPLATES = [
-    {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [TEMPLATES_DIR],
-        'APP_DIRS': True,
-        'OPTIONS': {
-            'context_processors': [
-                'django.template.context_processors.debug',
-                'django.template.context_processors.request',
-                'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
-            ],
-        },
-    },
+    {'BACKEND': 'django.template.backends.django.DjangoTemplates',
+     'DIRS': [TEMPLATES_DIR],
+     'APP_DIRS': True,
+     'OPTIONS': {
+         'context_processors':
+             ['django.template.context_processors.debug',
+              'django.template.context_processors.request',
+              'django.contrib.auth.context_processors.auth',
+              'django.contrib.messages.context_processors.messages',
+              ],
+     },
+     },
 ]
 
 WSGI_APPLICATION = 'api_yamdb.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': os.getenv('DB_ENGINE', default='django.db.backends.postgresql',
+        'ENGINE': os.getenv('DB_ENGINE', default='django.db.backends.postgresql'),
         'NAME': os.getenv('DB_NAME'),
         'USER': os.getenv('POSTGRES_USER'),
         'PASSWORD': os.getenv('POSTGRES_PASSWORD'),

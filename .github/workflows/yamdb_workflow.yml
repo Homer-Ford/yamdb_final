@@ -6,7 +6,6 @@ jobs:
   tests:
     runs-on: ubuntu-latest
     steps:
-    
     - uses: actions/checkout@v2
     - name: Set up Python
       uses: actions/setup-python@v2
@@ -37,7 +36,9 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
       - name: Push to Docker Hub
-        uses: docker/build-push-action@v2 
+        uses: docker/build-push-action@v2
+        run: |
+          pwd
         with:
           push: true
           tags: homerford/api_yamdb_web

@@ -11,9 +11,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = 'p&l%385148kslhtyn^##a1)ilz@4zqj=rq&agdol^##zgl9(vs'
 
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['158.160.0.12', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['158.160.0.12', '127.0.0.1', 'localhost', 'web']
 
 AUTH_USER_MODEL = 'reviews.User'
 

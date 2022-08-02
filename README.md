@@ -1,4 +1,5 @@
 # api_yamdb
+http://yatubehost.ddns.net/
 ![example workflow](https://github.com/Homer-Ford/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 ### Описание проекта:

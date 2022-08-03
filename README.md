@@ -1,5 +1,5 @@
 # api_yamdb
-http://yatubehost.ddns.net/
+http://yatubehost.ddns.net/redoc/  
 ![example workflow](https://github.com/Homer-Ford/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 ### Описание проекта:
@@ -13,13 +13,13 @@ http://yatubehost.ddns.net/
 
 ### Шаблон наполнения env-файла:
 
-DB_ENGINE-в какой СУБД работаем
-DB_NAME-имя базы данных
-POSTGRES_USER-логин для подключения к базе данных
-POSTGRES_PASSWORD-пароль для подключения к БД
-DB_HOST-название сервиса (контейнера)
-DB_PORT-порт для подключения к БД 
-SECRET_KEY-секретный ключ приложения Django
+DB_ENGINE-в какой СУБД работаем  
+DB_NAME-имя базы данных  
+POSTGRES_USER-логин для подключения к базе данных  
+POSTGRES_PASSWORD-пароль для подключения к БД  
+DB_HOST-название сервиса (контейнера)  
+DB_PORT-порт для подключения к БД  
+SECRET_KEY-секретный ключ приложения Django  
 
 ### Описание запуска приложения:
 
